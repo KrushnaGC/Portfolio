@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krushna Chavan — Creative Technologist</title>
+  <meta name="description"
+    content="Portfolio of Krushna Ganesh Chavan — Creative Technologist, IT Student at MIT Academy of Engineering. Building smart solutions with code and innovation.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-glow bg-glow--3"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__logo"><span class="gradient-text">KC</span></a>
+    <div class="navbar__links" id="nav-links">
+      <a href="index.html" class="navbar__link active">Home</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="projects.html" class="navbar__link">Projects</a>
+      <a href="achievements.html" class="navbar__link">Achievements</a>
+      <a href="certificates.html" class="navbar__link">Certificates</a>
+      <a href="contact.html" class="navbar__link">Contact</a>
+    </div>
+    <div class="navbar__toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main class="page-transition">
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__greeting reveal">Hello, I'm</p>
+        <h1 class="hero__name reveal reveal-delay-1">Krushna <span class="gradient-text">Chavan</span></h1>
+        <div class="hero__role reveal reveal-delay-2">
+          <span class="hero__role-prefix">I'm a&nbsp;</span>
+          <span class="hero__role-typed" id="typing-text">Developer</span>
+          <span class="hero__cursor">|</span>
+        </div>
+        <p class="hero__intro reveal reveal-delay-3">Building smart solutions with code and innovation. Passionate IT
+          student focused on programming, problem-solving, and building real&#8209;world projects.</p>
+        <div class="hero__cta reveal reveal-delay-4">
+          <a href="projects.html" class="btn btn--primary"><i class="fas fa-rocket"></i> View Projects</a>
+          <a href="contact.html" class="btn btn--outline"><i class="fas fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="hero__socials reveal reveal-delay-5">
+          <a href="https://github.com/KrushnaGC" target="_blank" class="hero__social" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="#" class="hero__social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hero__social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero__visual reveal reveal-delay-3">
+        <div class="hero__image-wrapper">
+          <img src="images/profile.jpg" alt="Krushna Chavan" class="hero__image"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="hero__image-placeholder"><i class="fas fa-user"></i></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-indicator__line"></div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS PREVIEW ======== -->
+    <section class="container" id="skills-preview">
+      <div class="section-header reveal">
+        <p class="section-label">Expertise</p>
+        <h2>Skills & <span class="gradient-text">Technologies</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="glass-card skill-card reveal reveal-delay-1"><i class="fas fa-code"></i>
+          <h3>C / C++</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:75%"></div>
+          </div>
+        </div>
+        <div class="glass-card skill-card reveal reveal-delay-2"><i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:80%"></div>
+          </div>
+        </div>
+        <div class="glass-card skill-card reveal reveal-delay-3"><i class="fab fa-java"></i>
+          <h3>Java</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:65%"></div>
+          </div>
+        </div>
+        <div class="glass-card skill-card reveal reveal-delay-4"><i class="fab fa-html5"></i>
+          <h3>HTML / CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:85%"></div>
+          </div>
+        </div>
+        <div class="glass-card skill-card reveal reveal-delay-5"><i class="fas fa-brain"></i>
+          <h3>Problem Solving</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:90%"></div>
+          </div>
+        </div>
+        <div class="glass-card skill-card reveal reveal-delay-1"><i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__fill" style="--fill:70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FEATURED PROJECTS ======== -->
+    <section class="container" id="featured-projects">
+      <div class="section-header reveal">
+        <p class="section-label">Portfolio</p>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-preview-grid">
+        <div class="glass-card project-preview reveal reveal-delay-1">
+          <div class="project-preview__img"><i class="fas fa-car-battery"></i></div>
+          <h3>Electric Vehicle Project</h3>
+          <p>Building an EV system focusing on vehicle design, motor selection, and efficiency optimization.</p>
+          <div class="project-preview__tags"><span class="tag">Engineering</span><span class="tag">Innovation</span>
+          </div>
+        </div>
+        <div class="glass-card project-preview reveal reveal-delay-2">
+          <div class="project-preview__img"><i class="fas fa-calculator"></i></div>
+          <h3>Modern Calculator</h3>
+          <p>A sleek modern calculator with responsive UI, smooth animations, and interactive design.</p>
+          <div class="project-preview__tags"><span class="tag">JavaScript</span><span class="tag">CSS</span></div>
+        </div>
+        <div class="glass-card project-preview reveal reveal-delay-3">
+          <div class="project-preview__img"><i class="fas fa-laptop-code"></i></div>
+          <h3>Smart Portfolio Website</h3>
+          <p>A futuristic animated portfolio featuring glassmorphism UI and advanced frontend interactions.</p>
+          <div class="project-preview__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+              class="tag">JS</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="projects.html" class="btn btn--outline">View All Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ======== ACHIEVEMENTS PREVIEW ======== -->
+    <section class="container" id="achievements-preview">
+      <div class="section-header reveal">
+        <p class="section-label">Milestones</p>
+        <h2>Key <span class="gradient-text">Achievements</span></h2>
+      </div>
+      <div class="stats-row">
+        <div class="glass-card stat-card reveal reveal-delay-1"><span class="stat-card__number"
+            data-count="3">0</span><span class="stat-card__label">Certifications</span></div>
+        <div class="glass-card stat-card reveal reveal-delay-2"><span class="stat-card__number"
+            data-count="3">0</span><span class="stat-card__label">Projects</span></div>
+        <div class="glass-card stat-card reveal reveal-delay-3"><span class="stat-card__number"
+            data-count="5">0</span><span class="stat-card__label">Languages</span></div>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="achievements.html" class="btn btn--outline">View Achievements <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT CTA ======== -->
+    <section class="container cta-section" id="cta">
+      <div class="glass-card cta-card reveal">
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p>Got a project idea or just want to say hello? I'd love to hear from you.</p>
+        <a href="contact.html" class="btn btn--primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials">
+      <a href="https://github.com/KrushnaGC" target="_blank" class="footer__social-link" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:krushnagchavan@gmail.com" class="footer__social-link" aria-label="Email"><i
+          class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 Krushna Chavan. Crafted with passion.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Counter animation on scroll
+    const statsObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObserver.disconnect(); } });
+    }, { threshold: 0.5 });
+    const statsRow = document.querySelector('.stats-row');
+    if (statsRow) statsObserver.observe(statsRow);
+  </script>
+</body>
+
+</html>
