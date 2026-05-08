@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Projects — Krushna Chavan</title>
+  <meta name="description" content="Explore projects by Krushna Chavan — from Electric Vehicles to modern web experiences.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--1"></div><div class="bg-glow bg-glow--2"></div><div class="bg-glow bg-glow--3"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <nav class="navbar"><a href="index.html" class="navbar__logo"><span class="gradient-text">KC</span></a>
+    <div class="navbar__links" id="nav-links">
+      <a href="index.html" class="navbar__link">Home</a><a href="about.html" class="navbar__link">About</a>
+      <a href="projects.html" class="navbar__link active">Projects</a><a href="achievements.html" class="navbar__link">Achievements</a>
+      <a href="certificates.html" class="navbar__link">Certificates</a><a href="contact.html" class="navbar__link">Contact</a>
+    </div>
+    <div class="navbar__toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main class="page-transition">
+    <section class="page-hero">
+      <p class="section-label reveal">My Work</p>
+      <h1 class="reveal reveal-delay-1">My <span class="gradient-text">Projects</span></h1>
+      <p class="page-hero__sub reveal reveal-delay-2">Real-world projects that combine engineering, creativity, and code.</p>
+    </section>
+
+    <section class="container">
+      <div class="project-full-grid">
+        <!-- Project 1 -->
+        <article class="glass-card project-card reveal" id="project-ev">
+          <div class="project-card__header">
+            <div class="project-card__icon"><i class="fas fa-car-battery"></i></div>
+            <span class="tag" style="background:rgba(168,85,247,0.15);border-color:rgba(168,85,247,0.3);color:var(--neon-purple)">Ongoing</span>
+          </div>
+          <h2>Electric Vehicle Project</h2>
+          <p class="project-card__desc">Building an EV system focusing on vehicle design, motor selection, efficiency optimization, and innovation using engineering concepts and technology. This project combines mechanical engineering principles with software-driven control systems to create a sustainable transportation solution.</p>
+          <div class="project-card__tags">
+            <span class="tag">Engineering</span><span class="tag">Innovation</span><span class="tag">Motor Design</span><span class="tag">Efficiency</span>
+          </div>
+          <div class="project-card__img">
+            <i class="fas fa-bolt" style="font-size:3rem;color:var(--neon-purple);opacity:0.3"></i>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-card project-card reveal reveal-delay-1" id="project-calc">
+          <div class="project-card__header">
+            <div class="project-card__icon"><i class="fas fa-calculator"></i></div>
+            <span class="tag">Completed</span>
+          </div>
+          <h2>Modern Calculator</h2>
+          <p class="project-card__desc">A sleek modern calculator with responsive UI, smooth animations, and interactive design. Built with clean JavaScript and styled with CSS transitions, it demonstrates front-end development proficiency and attention to UI/UX detail.</p>
+          <div class="project-card__tags">
+            <span class="tag">JavaScript</span><span class="tag">CSS3</span><span class="tag">Responsive</span><span class="tag">UI/UX</span>
+          </div>
+          <div class="project-card__img">
+            <i class="fas fa-equals" style="font-size:3rem;color:var(--neon-cyan);opacity:0.3"></i>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-card project-card reveal reveal-delay-2" id="project-portfolio">
+          <div class="project-card__header">
+            <div class="project-card__icon"><i class="fas fa-laptop-code"></i></div>
+            <span class="tag">Completed</span>
+          </div>
+          <h2>Smart Portfolio Website</h2>
+          <p class="project-card__desc">A futuristic animated portfolio website featuring glassmorphism UI, advanced frontend interactions, particle effects, scroll animations, and a premium dark theme. This very website demonstrates creative front-end engineering at its best.</p>
+          <div class="project-card__tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Animations</span>
+          </div>
+          <div class="project-card__img">
+            <i class="fas fa-code" style="font-size:3rem;color:var(--neon-blue);opacity:0.3"></i>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__socials">
+      <a href="https://github.com/KrushnaGC" target="_blank" class="footer__social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:krushnagchavan@gmail.com" class="footer__social-link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 Krushna Chavan. Crafted with passion.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>initTilt('.project-card'));</script>
+</body>
+</html>
